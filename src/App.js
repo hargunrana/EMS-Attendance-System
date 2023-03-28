@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./components/SideBar/SideBar.css";
+import "./components/Content.css";
+import "./components/Punch/Punch.css";
+import "./components/Modal/Modal.css";
+import SideBar from "./components/SideBar/SideBar";
+import Content from "./components/Content";
+import Modal from "./components/Modal/Modal";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [showModal, setShowModal] = useState(false);
+    return (
+        <div className="App">
+            <SideBar />
+            <Content />
+
+            {showModal ? <Modal /> : <div />}
+        </div>
+    );
 }
 
 export default App;

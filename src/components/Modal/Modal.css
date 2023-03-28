@@ -1,0 +1,43 @@
+.modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.698);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    background-color: white;
+    height: 26rem;
+    width: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-item {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-top: 1rem;
+}
+
+.input-bar{
+    height: 1.8rem;
+    width: 20rem;
+    
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(237, 237, 237);
+}

@@ -1,0 +1,22 @@
+.punch{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:5rem;
+}
+.punch>*{
+    margin-left: 1rem;
+}
+.circle{
+
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    
+}
+.punch-btn{
+    display: flex;
+    flex-direction: column;
+}

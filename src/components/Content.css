@@ -1,0 +1,98 @@
+.content {
+
+    height: 100vh;
+    width: 75vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links {
+    width: 70vw;
+    margin-bottom: 0.5rem;
+    font-size: small;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content-body {
+    background-color: rgb(187, 186, 186);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+    height: 80vh;
+    width: 70vw;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* TIMELINE COMPONENT */
+.timeline {
+    background-color: white;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+    height: 72vh;
+    width: 35vw;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.timeline-title {
+    color: rgb(220, 120, 120);
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+/*  TIMELINE COMPONENT ENDS */
+
+
+.side-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side-content > * {
+    background-color: white;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    height: 30vh;
+    width: 28vw;
+    border-radius: 0.75rem;
+}
+.status {
+    background-color: rgb(187, 186, 186);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+
+    height: 40vh;
+}
+
+.status > * {
+    margin-bottom: 0.5rem;
+}
+
+.day-details-info {
+    margin-left: 5rem;
+    margin-top: 1rem;
+
+    font-size: large;
+    /* font-weight: 600; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.day-details-info > * {
+    margin-top: 1rem;
+}
