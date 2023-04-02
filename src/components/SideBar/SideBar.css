@@ -36,6 +36,7 @@
 
     display: flex;
     margin: 0rem 2rem 0rem 2rem;
+    cursor: pointer;
 }
 
 .btn > * {
@@ -72,4 +73,3 @@
 .timestamp {
     margin-top: 15rem;
 }
-

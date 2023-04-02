@@ -1,6 +1,6 @@
 import React from "react";
 
-function DayDetails() {
+function DayDetails({ totalAbsentTime, totalPresentTime,totalDeductions }) {
     return (
         <div className="day-details">
             <div className="timeline-title" style={{ marginTop: "1rem" }}>
@@ -8,10 +8,10 @@ function DayDetails() {
             </div>
 
             <div className="day-details-info">
-                <span>{`Total Present Time : ${"08:30"}`}</span>
-                <span>{`Total Absent Time : ${"00:30"}`}</span>
-                <span>{`Total Exemption : ${"00:00"}`}</span>
-                <span>{`Total Deduction : ${"00:00"}`}</span>
+                <span>{`Total Present Time : ${totalPresentTime}`}</span>
+                <span>{`Total Absent Time : ${totalAbsentTime}`}</span>
+                <span>{`Total Exemption : ${totalDeductions}`}</span>
+                <span>{`Total Deduction : ${totalDeductions}`}</span>
             </div>
         </div>
     );
