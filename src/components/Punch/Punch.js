@@ -5,7 +5,7 @@ function Punch({ color, time, type }) {
         <div className="punch">
             <span>{time}</span>
 
-            {type == "in" ? (
+            {type === "in" ? (
                 <div
                     className="circle"
                     style={{ backgroundColor: "green" }}

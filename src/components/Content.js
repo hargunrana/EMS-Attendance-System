@@ -57,7 +57,7 @@ function Content({ userData }) {
         }
         return count;
     };
-
+    
     useEffect(() => {
         const totalWorkingHours =
             userData.inTime && userData.outTime
@@ -65,14 +65,15 @@ function Content({ userData }) {
                 : 0;
 
         let absenceTime = getAbsenceTime(userData.deductions);
-        let presentTime = totalWorkingHours - absenceTime;
+        let presentTime =
+            totalWorkingHours === 0 ? 0 : totalWorkingHours - absenceTime;
         let deductionCount = getDeductions(userData.deductions);
 
         setTotalAbsentTime(handleIntToTime(absenceTime));
         setTotalPresentTime(handleIntToTime(presentTime));
         setTotalDeduction(deductionCount);
 
-        // console.log(userData);
+        // console.log("USE EFFECT");
 
         let currStatus =
             !userData.inconclusive && !userData.incomplete
@@ -82,7 +83,7 @@ function Content({ userData }) {
                 : "Incomplete";
 
         setStatus(currStatus);
-    }, []);
+    });
 
     return (
         <div className="content">

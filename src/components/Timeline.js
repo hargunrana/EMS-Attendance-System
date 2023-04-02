@@ -6,7 +6,7 @@ function Timeline({ deductions }) {
         <div className="timeline">
             <div className="timeline-title">{"Timeline"}</div>
 
-            {console.log(deductions[1])}
+            {/* {console.log(deductions[1])} */}
 
             <div className="list-punch">
                 {deductions.map((obj, index) => (
